@@ -1,0 +1,223 @@
+/*------------------------提示框CSS---------------------------------------*/
+* {
+    font-size: 14px;
+    color: #777;
+    margin: 0px;
+    padding: 0px;
+}
+/*第一个*/
+.prompt_box1{ width:400px;  position: absolute;  top:33% !important;  left: 39%; }
+.prompt_main{ width:100%; padding:26px 10px; overflow: hidden;}
+.prompt_main span{ float: left; width:40px; height:40px;}    /*图标公用*/
+.prompt_icon1{ background-position:0px 0px; background-image: url("../images/prompt_icon.png"); background-repeat: no-repeat; }
+.prompt_main p{ float: left;  height:40px; line-height: 34px; text-indent:6px; }
+.widget_foot {
+    overflow: hidden;
+    border-top: 1px solid #ECECEC;
+    padding: 8px 15px;
+    border-bottom: 1px solid #fff;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #f8f8f8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+    background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: linear-gradient(top, #f8f8f8, #f2f2f2);
+}     /*按钮盒子*/
+
+.control_prompt1{ width:150px !important; height:30px !important; padding-top: 0 !important; float: right; }
+.control_prompt1 a,.control_prompt2 a{ 
+	float: left; width:68px; height:28px; text-align: center; line-height: 24px; margin-left:7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;    cursor: pointer;
+}
+.control_prompt22 a {
+    float: left;
+    width: 74px;
+    height: 28px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 139px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.control_prompt22 a:hover {
+   		text-decoration:none;
+   		cursor:pointer;
+	}
+.control_queding_prompt{ color: #333333;  border: solid 1px #95bf72 !important;  border-radius: 3px;  background: #F7F7F7;}   /*确定*/
+.control_queding_prompt:hover{  background: #e3eedf;}   /*确定经过*/
+.control_quxiao:hover{  background: #ededed;}    /*取消经过*/
+
+
+/*第二个*/
+.prompt_box2{ width:380px;  position: absolute;  top:33% !important;  left: 39%; }
+.prompt_icon2{ background-position:0px -0px; background-image: url("../images/prompt_icon.png"); background-repeat: no-repeat; }
+.control_prompt2{ width:150px !important; height:30px !important; padding-top: 0 !important;  margin: 0 auto !important;}
+
+/*第三个*/
+.prompt_box3{ width:380px;  position: absolute;  top:70% !important;  left: 32%; }
+.prompt_icon3{ background-position:0px -111px; background-image: url("../images/prompt_icon.png"); background-repeat: no-repeat; }
+.control_prompt2{ width:150px !important; height:30px !important; padding-top: 0 !important;  margin: 0 auto !important;}
+
+.police_top {
+    overflow: hidden;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    text-shadow: 0px 1px #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));
+    background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);
+    background: linear-gradient(top, #f8f8f8, #f2f2f2);
+}
+.police_top p {
+    font-weight: bold;
+    font-size: 15px;
+    text-indent: 10px;
+    text-shadow: 0px 1px #FFFFFF;
+}
+.police_top img, .police_top p {
+    float: left;
+}
+
+.xiugai_box {
+    position: absolute;
+    top: 33%;
+    left: 39%;
+    position: fixed;
+    background: #fbfbfb;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 4px 6px rgba(0,0,0,0.175);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.175);
+    z-index: 1010;
+}
+.police_top span {
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icon_2.png");
+    background-position: -33px -1px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+/*-----------creditFamilyTaskBox start------------------------*/
+ul.taskBox{
+	width: 100%;
+}
+ul.taskBox > li{
+	width: 100%;height: 35px; line-height: 35px;
+}
+
+ul.taskBox > li > label{
+	width: 34%;
+}
+
+.divlist{
+	width: 100%; position: relative;float: left;margin-top: 5px;border-top: 1px dashed #C9C9C9;
+}
+.taskTable{
+	width:100%; height:83%; overflow-y: auto;
+}
+.taskTable > label{
+	display:block;height:28px;font-weight: normal;
+}
+
+.tarea{
+	width:100%;display: inline-block;margin-left: 10px; height: 75px !important;
+}
+.rightcontent{
+	width: 50%; float: left;padding:34px 0px 20px 20px;
+}
+.rightcontent > p{
+	width: 100%;height:58px;float: left;
+}
+.rightcontent > p >label{
+	font-size: 17px;font-weight:normal;letter-spacing: 1.5px;
+}
+
+/*-----------creditFamilyTaskBox end------------------------*/
+
+
+/* 审批流程弹框效果  start*/
+.taskTable > .lablenew{
+    height: 26px !important;
+}
+.sp_table,.sp_table_new{
+    width: 100%;
+}
+.sp_table_new tr >td {
+    height: 34px !important;
+}
+.sp_table tr >td {
+ height: 30px;
+}
+.sp_table tr >td > label{
+    width:80px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+div.sp_div >label{
+    width: 120px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+div.sp_div > span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box_top{
+    display: block; width: 100%; margin-bottom: 15px;float: left;
+}
+.bt_left{
+    display: inline-block;width: 70%; position: relative;border:1px solid #ddd;padding: 5px 10px; margin-right: 5px;float: left;
+}
+.boxP{
+    display: block;position: absolute; width: 170px;height: 28px;border:1px solid #ddd; top: -10px; left: 20px;background: #eee; border-radius: 2px;padding: 0 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bt_right{
+    display: inline-block;width: 29%; position: relative;float: left;
+}
+.bt_right_1,.bt_right_2{
+    display:block;width: 100%; position: relative;border:1px solid #ddd;padding: 5px 10px;float: left;
+}
+.font_red{
+    color:#DF4644 !important;
+}
+.bac_red{
+    background:#DF4644 !important;
+    color: #fff !important;
+}
+.taskselect{
+    width: 120px;
+    height: 27px;.
+    border-radius: 3px;
+    text-indent: 5px;
+}
+.splc{
+	width: 50%; float: left;
+}
+.splcLable{
+	font-weight: normal; font-size: 18px;font-family:"微软雅黑","Microsoft Yahei","宋体","Hiragino Sans GB",tahoma,arial,sans-serif;letter-spacing: 1.5px;
+}
+/* 审批流程弹框效果  end*/
+
+
+
+
+
