@@ -22,7 +22,7 @@
 	<!-- 这里配置后就不用再使用bean标签配置bean了 -->
 	<context:annotation-config />
 	<!-- 自动扫描的包名 -->
-	<context:component-scan base-package="org.weibei.blockchain" />
+	<context:component-scan base-package="org.cros.blockchain" />
 
 	<!-- 获取配置资源 -->
 	<context:property-placeholder location="classpath:mongodb.properties" />
@@ -41,14 +41,14 @@
 			min-heartbeat-frequency="${mongo.minHeartbeatFrequency}"
 			heartbeat-frequency="${mongo.heartbeatFrequency}" />
 	</mongo:mongo-client>
-	<mongo:db-factory dbname="weibei" mongo-ref="mongo" />
+	<mongo:db-factory dbname="cros" mongo-ref="mongo" />
 
 	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
 		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 	</bean>
 
 
-	<bean id="SpringQtzJob" class="org.weibei.blockchain.quartz.BlockChainScheduledJob" />
+	<bean id="SpringQtzJob" class="org.cros.blockchain.quartz.BlockChainScheduledJob" />
 	<bean id="SpringQtzJobMethod"
 		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
 		<property name="targetObject">

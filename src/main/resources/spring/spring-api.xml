@@ -23,7 +23,7 @@
 	</jaxrs:server>
 
 	<bean id="jacksonJsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
-	<bean id="coprApi" class="org.weibei.blockchain.api.impl.WeibeiMsgApiImpl"></bean>
+	<bean id="coprApi" class="org.cros.blockchain.api.impl.WeibeiMsgApiImpl"></bean>
 </beans>
 
 
